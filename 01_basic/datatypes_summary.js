@@ -33,3 +33,25 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+//*******************Memory Allocation******************
+
+// STACK Memory(Primitive) and HEAP Memory(Non-Primitive)
+// In stack we will get a copy of the entity  whereas in Heap we keep the value we will get the reference(jo bhi changes karte ho vo aap original value me karte ho)
+
+let myYoutubeName = "vaibhavdotcom"
+
+let anotherName = myYoutubeName
+anotherName = "vaibhavEmpower" 
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userone = {
+    email: "user@google.com",
+    upi: "user@ylb"
+}
+
+let usertwo = userone
+usertwo.email = "vaibhav@google.com"
+console.log(userone.email);
+console.log(usertwo.email);
